@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>滑动</title>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<style>
+	*{
+		margin: 0;
+		padding:0;
+	}
+	.box{
+		width:100%;
+		height: 100%;
+		max-width: 640px;
+		min-width: 320px;
+		margin:0 auto;
+	}
+		.swiper-container {
+  	  width: 100%;
+  	  height:300px;
+  	  margin:0 auto;
+	}
+
+	</style>
+</head>
+<body>
+<div class="box">
+
+	<div class="swiper-container">
+	    <div class="swiper-wrapper"> 
+	        <div class="swiper-slide swiper-slide-active" style="background-color: red">Slide 1</div>
+	        <div class="swiper-slide swiper-slide-active" style="background-color: green"><p class="animated fadeIn">就回家单间多少发动机拉开距离</p></div>
+	        <div class="swiper-slide swiper-slide-active" style="background-color: orange">Slide 3</div>
+	    </div>
+	    <!-- 如果需要分页器 -->
+	    <div class="swiper-pagination"></div>   
+	    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div> 
+	</div>
+
+</div>
+	
+	<script src="js/swiper.min.js"></script>
+	<script>        
+  var mySwiper = new Swiper ('.swiper-container', {
+    // direction: 'vertical',
+    loop: true,
+     observer: true,
+    // 如果需要分页器
+    pagination: '.swiper-pagination'
+//     watchSlidesProgress : true,
+// watchSlidesVisibility : true
+// prevButton:'.swiper-button-prev',
+// nextButton:'.swiper-button-next',
+// autoplay: 1000
+  })        
+  </script>
+</body>
+</html>

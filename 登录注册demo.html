@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" class="layui-input" id="id" placeholder="请输入帐号"></input>
+	<input type="password" class="layui-input" id="password"
+		placeholder="请输入密码"></input>
+	<button type="button" class="btn btn-default" onclick="login(this)">登录</button>
+	<script type="text/javascript">
+		function login() {
+			//获得input框里面的值
+			var id = $('#id').val();
+			var password = $('#password').val();
+			$.ajax({
+				type : "post",
+				url : "Ajax/Ajax_Servlet",
+				data : {
+					id : id,
+					password : password
+				},
+				success : function(data) {
+					//data为servlet返回的值
+					if (data == 'true') {
+						alert("登录成功");
+					}
+					if (data == 'false') {
+						alert("密码或帐号错误，登录失败");
+					}
+				}
+			});
+		}
+	</script>
+</body>
+</html>

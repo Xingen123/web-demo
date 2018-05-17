@@ -1,0 +1,9 @@
+{
+	"image":[
+		{"name" : "bg_day", "url" : "img/flappybird/bg_day.png"},
+		{"name" : "bg_night", "url" : "img/flappybird/bg_night.png"},
+		{"name" : "bird0_0", "url" : "img/flappybird/bird0_0.png"},
+		{"name" : "bird0_1", "url" : "img/flappybird/bird0_1.png"},
+		{"name" : "bird0_2", "url" : "img/flappybird/bird0_2.png"}
+	]	
+}	

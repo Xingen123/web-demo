@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>30种CSS3炫酷页面预加载loading动画特效|DEMO28_jQuery之家-自由分享jQuery、html5、css3的插件库</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/Icomoon/style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<style>
+	#loading{
+		background-color:white;
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		z-index: 2;
+		margin-top: 0px;
+		top: 0px;
+	}
+	#loading-center{
+		width: 100%;
+		height: 100%;
+		position: relative;
+		}
+	#loading-center-absolute {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		height: 100px;
+		width: 100px;
+		margin-top: -90px;
+		margin-left: -50px;
+		-ms-transform: rotate(-135deg); 
+	   	-webkit-transform: rotate(-135deg); 
+	    transform: rotate(-135deg);
+	}
+	.object{
+		-moz-border-radius: 50% 50% 50% 50%;
+		-webkit-border-radius: 50% 50% 50% 50%;
+		border-radius: 50% 50% 50% 50%;
+		position: absolute;
+		border-top: 1px solid rgb(0,160,232);
+		border-bottom: 1px solid transparent;
+		border-left:  1px solid rgb(0,160,232);
+		border-right: 1px solid transparent;
+		
+		-webkit-animation: animate 2s infinite;
+		animation: animate 2s infinite;	
+
+		}
+	#object_one{
+		left: 75px;
+		top: 75px;
+		width: 1px;
+		height: 1px;
+		}
+								
+	#object_two{
+		left: 65px;
+		top: 65px;
+		width: 25px;
+		height: 25px;
+		-webkit-animation-delay: 0.2s;
+	    animation-delay: 0.2s;
+		}
+			
+	#object_three{
+		left: 55px;
+		top: 55px;
+		width: 45px;
+		height: 45px;
+		-webkit-animation-delay: 0.4s;
+	    animation-delay: 0.4s;
+		}
+	
+
+	@-webkit-keyframes animate {
+	 
+
+	50% {
+
+		-ms-transform: rotate(360deg) scale(0.8); 
+	   	-webkit-transform: rotate(360deg) scale(0.8); 
+	    transform: rotate(360deg) scale(0.8); 
+	  }
+	}
+
+	@keyframes animate {
+		
+	50% {
+
+		-ms-transform: rotate(360deg) scale(0.8); 
+	   	-webkit-transform: rotate(360deg) scale(0.8); 
+	    transform: rotate(360deg) scale(0.8); 
+	  }	
+	}
+	</style>
+</head>
+<body>
+	dfdsf
+		<div id="loading">
+			<div id="loading-center">
+				<div id="loading-center-absolute">
+					<div class="object" id="object_four"></div>
+					<div class="object" id="object_three"></div>
+					<div class="object" id="object_two"></div>
+					<div class="object" id="object_one"></div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

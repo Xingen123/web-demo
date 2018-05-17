@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>内核适配问题</title>
+	<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+	<div>这是一篇文章</div>	
+	<p>三点后按时到货活动结束到货时间的尽快尽快结婚登记时间</p>
+	<script>
+	var browser = {
+  versions: function() {
+    var u = navigator.userAgent;
+    return {
+               
+            trident: u.indexOf('Trident') > -1, //IE内核
+            presto: u.indexOf('Presto') > -1, //opera内核
+            webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+            gecko: u.indexOf('Firefox') > -1, //火狐内核Gecko
+            mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+            ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios
+            android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android
+            iPhone: u.indexOf('iPhone') > -1 , //iPhone
+            iPad: u.indexOf('iPad') > -1, //iPad
+            webApp: u.indexOf('Safari') > -1 //Safari
+       
+        };
+    }()
+}
+ 
+if (browser.versions.ios || browser.versions.iPhone || browser.versions.iPad) {
+    $("p").css({"display":"none"});
+}else{
+	$("p").css({"display":"block"});
+}
+
+	</script>
+</body>
+</html>

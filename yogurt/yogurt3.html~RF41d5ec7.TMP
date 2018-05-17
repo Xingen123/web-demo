@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" href="css/yoghurt3.css?version=1.2.6">
+        <link rel="stylesheet" href="css/swiper.min.css">
+        <script src="js/swiper.min.js"></script>
+        <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script> 
+         <script src="js/yoghurt3.js?version=1.2.11"></script>
+         <!-- <script type="text/javascript" src="js/PerfectLoad.js"></script> -->
+        <title>yogurt3</title>
+        <style>
+
+        </style>
+    </head>
+       <script>
+       $(window).load(function() {
+     $("#loading").fadeOut(1000);
+  })  
+  </script>
+    <body class="yogurt3_box ">
+
+    <!-- 预加载 -->
+  <div id="loading">
+    <div id="loading-center">
+      <div id="loading-center-absolute">
+        <div id="object"></div>
+      </div>
+    </div>
+  </div>
+        <nav id="left">
+            <!-- <img src="../../../img/web/U.png" alt=""> -->
+            <div>BlueGlass Yogurt</div>
+            <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.aqlk.uclick">打开app购买</a>
+        </nav>
+        <header class="header">
+        <img src="images/play.png" style="position: absolute;top: 45%;left: 0;right: 0; width: 50px;height: 50px;z-index: 1000;margin: 0 auto; display: none;" alt="" class="button">
+            <div class="swiper-container">
+
+                <div class="swiper-wrapper"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </header>
+        <section class="yogurt3_section1">
+            <p>
+            </p>
+            <span></span>
+        </section>
+        <section class="yogurt3_section2">
+            <ul></ul>
+        </section>
+        <footer class="footer">
+            <p>猜你喜欢</p>
+            <div class="hello content">
+                <ul>
+                </ul>
+            </div>
+        </footer>
+
+    </body>
+
+</html>

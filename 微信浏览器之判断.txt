@@ -1,0 +1,15 @@
+function is_weixin(){
+	var ua = navigator.userAgent.toLowerCase();
+	if(ua.match(/MicroMessenger/i)=="micromessenger") {
+		return true;
+ 	} else {
+		return false;
+	}
+}
+
+
+if（is_weixin()）{
+	怎么怎么样
+}else{
+     怎样
+}

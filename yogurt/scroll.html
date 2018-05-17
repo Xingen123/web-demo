@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+	<title></title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+
+	}
+		.box{
+			max-width: 640px;
+			min-width: 320px;
+			width:100%;
+			height:550px;
+			position: relative;
+			margin:0 auto;
+			background-size: 100% 100%;
+			background-image:url("images/coffer3.png");
+		}
+		.shadow{
+			width:100%;
+			height:70%;
+			position: absolute;
+			bottom:0;
+			background-image:linear-gradient(to top,rgba(0,0,0,1),transparent);
+		}
+		.text{
+			width: 100%;
+			height: 110px;
+			background-color: black;
+			color: white;
+			font-size: 18px;
+			padding-left: 10px;
+		}
+		.content{
+			width: 100%;
+			height: 500px;
+		}
+		.body{
+			position: relative;
+		}
+		#left {
+			width:100%;
+			height:70px; 
+			z-index:10000; 
+			background-color:black;
+		 	border-top: 0.1px solid gray;
+		 	position:fixed;
+		 	bottom: 0;
+		  	right:0;
+		 	left:0;
+		 	margin:0 auto;
+		 	display: none;
+			transition:.8s;
+		}
+#left>div {
+			width:40%;
+			height:40px;
+			margin-top: 10px;
+			margin-left: 5%;
+			line-height: 40px;
+			transition:.8s; 
+			text-align: center;
+			font-size: 18px; 
+			float: left;
+			color: white;  
+			font-family:"Arial";}
+#left>a {
+			width:40%;
+			height:40px;
+			line-height: 40px;
+			margin-left: 10%; 
+			float: left;
+			margin-top: 10px; 
+			color:black;
+			font-size:14px;
+			transition:.8s;
+			border-radius:2px;
+			background-color:white;
+			text-decoration:none;
+			text-align:center;
+			font-family:"微软雅黑";
+		}
+	</style>
+</head>
+<input type="file" value="点击上传" style="border:none;background-color: white;">
+<script>
+			window.onscroll = function() {
+
+                var t = document.documentElement.scrollTop || document.body.scrollTop;
+
+                if (t > 50 ) {
+                     $("#left").css({
+
+                     	"display":"block",
+                       "background-color":"white"
+                    });
+                    $("#left>div").css({
+                       "color":"black"
+                    });
+                    $("#left>a").css({
+                       "color":"white",
+                       "background-color":"rgb(234,103,101)"
+                    });
+                    $("#left").addClass("animated fadeIn");
+                } else {
+                   $("#left").css({
+                   	   "display":"none",
+                       "background-color":"black"
+                    });
+                    $("#left>div").css({
+                       "color":"white"
+                    });
+                    $("#left>a").css({
+                       "color":"black",
+                       "background-color":"white"
+                    });
+                    
+                }
+
+            }
+	</script>
+<body class="body">
+	<nav id="left" class="animated fadeIn">
+            <div>BlueGlass Yogurt</div>
+            <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.aqlk.uclick">打开app购买</a>
+    </nav>
+	<div class = "box">
+		<div class = "shadow"></div>
+	</div>
+	
+	<div class="text">人发付付付</div>
+	<div class="content"></div>
+
+</body>
+<ml>

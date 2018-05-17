@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<title>dong</title>
+	<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+		.box{
+			width: 100%;
+			max-width: 640px;
+			min-width: 320px;
+			height: 500px;
+			margin: 0 auto;
+			background-color: black;
+			
+		}
+		.small{
+			 width: 100px; 
+  			height: 100px; 
+  			background-image: url(dong.png);
+  			background-size: 300% 100%;
+  			background-position: 0px 0px;
+  			margin-left: 50px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="small" id="light"></div>
+	</div>
+	<script type="text/javascript">
+	// function fun(){
+		var light = document.getElementById('light');
+        var red = setInterval(function(){    
+            light.style.backgroundPosition = '100px 0';
+        },1000);
+        var green = setInterval(function(){       
+            light.style.backgroundPosition = '200px 0';
+        },1500);
+        var black = setInterval(function(){
+            light.style.backgroundPosition = '0 0';
+        },2000);
+	// }
+ 	// setInterval("fun()",1000);	
+</script>
+</body>
+</html>

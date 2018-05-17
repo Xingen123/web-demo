@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />            
+        <meta name="keywords" content="关键字1,关键字2" />        
+        <meta name="Description" content="描述信息" />
+        <title>循环滚动</title>
+        <!--CSS/JS-->
+        <style type="text/css">
+            *{margin:0;padding:0;}
+            ul,li{list-style:none;display:block;}
+            #scrollBox{height:150px;width:300px;margin:100px auto;background:#f09;overflow:hidden;}
+            #scrollBox #Ul1,#Ul2{width:280px;float:left;}
+            #scrollBox li{height:15px;line-height:15px;text-align:center;}
+
+        </style>
+
+    </head>
+ <body>
+        <!--div-->
+    <div id="scrollBox">
+        <ul id="Ul1">
+            <li>李华 中了10块钱<li>
+            <li>Leo 中了一个手机<li>
+                          <li>李华 中了10块钱<li>
+            <li>Leo 中了一个手机<li>
+                          <li>李华 中了10块钱<li>
+            <li>Leo 中了一个手机<li>
+              
+           </ul>
+        <ul id="Ul2"></ul>
+    </div>
+    <script type="text/javascript">            
+                var box =document.getElementById('scrollBox');
+                var Ul1 = document.getElementById('Ul1');
+                var Ul2 = document.getElementById('Ul2');
+                Ul2.innerHTML=Ul1.innerHTML;
+                console.log(Ul1.offsetHeight,box.scrollTop)
+                function scrollUp(){
+
+                  if(box.scrollTop>=Ul1.offsetHeight){
+                      box.scrollTop=0;
+                  }else{
+                      box.scrollTop++
+                  }
+                }                
+                var time = 50;
+                var mytimer=setInterval(scrollUp,time);
+
+
+                // box.onmouseover=function(){
+                //     clearInterval(mytimer);
+                // }
+                // box.onmouseout=function(){
+                //     mytimer=setInterval(scrollUp,time);
+                // }
+        </script>
+ </body>
+
+</html>

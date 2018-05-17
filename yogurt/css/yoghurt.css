@@ -1,0 +1,27 @@
+* {margin:0;padding:0;font-family: "微软雅黑";}
+.yoghurt {width:100%;max-width:640px;min-width:320px;margin:0 auto;margin-bottom:50px;position:relative;}
+.yoghurt_header {width:100%;position:relative;}
+.yoghurt_headerimg {width:100%;display:block;}
+.yoghurt_section1 {width:90%;margin:0 auto;overflow:hidden;}
+.big_title {font-weight:500;letter-spacing:3px;font-size:20px;margin-top:10px;font-family:"Arial";}
+.small_title {font-size:14px;letter-spacing:1px;margin-top:5px;}
+.yoghurt_content {width:100%;margin-top:30px;display:flex;align-items:center;justify-content:space-between;}
+.text_p2 {margin-top:5px;}
+.text_span {color:#009adb;font-family:"Arial";}
+.yoghurt_img {width:60px;height:60px;border-radius:30px;display:block;}
+.yoghurt_section2 {width:90%;margin:50px auto;border:1px solid  #009adb;font-family:"Arial";position:relative;}
+.yoghurt_section2>div {height:25px;background:white;position:absolute;padding-left:10px;padding-right:10px;z-index:2;top:-10px;left:10px;}
+.yoghurt_section2>p {margin:20px 15px;line-height:25px;font-size:13px;text-indent:2em;}
+.yoghurt_section3 {width:90%;margin:0 auto;}
+.section3_title {font-weight:500;}
+.text_content {display:flex;flex-direction:column;margin-top:20px;border-bottom:1px solid  #009adb;}
+.text_content>a {text-decoration:none;color:black;}
+.text_title {display:flex;justify-content:space-between;}
+.text_title>div {width:70%;margin-left:20px;}
+.text_title_img {width:20%;height:65px;display:block;}
+.text_title2 {margin-top:20px;margin-bottom:30px;font-size:13px;line-height:22px;text-indent:2em;}
+.text_title_img1 {width:8%;height:25px;display:block;}
+#left {width:100%;height:40px;line-height:30px;z-index:10000;background-color:#666666;max-width:640px;min-width:320px;position:fixed;top:0;right:0;left:0;display:none;overflow:hidden;margin:0 auto;}
+#left>img {width:8%;height:30px;float:left;margin-left:15px;margin-top:5px;}
+#left>h4 {width:70%;height:100%;color:white;float:left;margin-top:5px;margin-left:10px;font-family:"Arial";}
+#left>a {width:12%;height:20px;color:white;line-height:20px;font-size:14px;border-radius:2px;background-color:#009adb;text-decoration:none;text-align:center;float:left;margin-top:10px;font-family:"微软雅黑";}
