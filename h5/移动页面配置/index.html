@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<title></title>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+	
+	<script src="js/adapt.js"></script>  
+	<script src="js/fastclick.js"></script>  
+	<script src="js/swiper-4.3.5.min.js"></script>  
+	<link rel="stylesheet" href="css/index.css"> 
+	<link rel="stylesheet" href="css/swiper-4.3.5.min.css">
+	<style>
+		.demo{
+			font-size: 1rem;
+		}
+	</style>
+</head>
+<body>
+<div id="app" class="demo">
+	<div class="headbox">
+		<div class="swiper-container">
+		  <div class="swiper-wrapper">
+		   <!--  <div v-for="(item,index) in currentTab" :key="index" class="swiper-slide">
+		      <video :poster="item.id" :src="itemvideo.text" controls="controls" id="video1"></video>
+		    </div> -->
+		  </div>
+		  <div class="swiper-button-prev"></div>
+		  <div class="swiper-button-next"></div>
+		  <div class="next"></div>
+		</div>
+	</div>
+	<div class="video">
+		<video src=""></video>
+	</div>
+</div>
+<script>
+	let vm = new Vue({
+	    el:'#app',
+	    data:{
+            currentTab:[],
+    		tabs: []
+        },
+		watch:{
+		},
+		methods:{
+
+		},
+		computed:{
+			
+		},
+		created () {},
+		mounted () {
+			// var mySwiper = new Swiper ('.swiper-container', {
+			//     direction : 'vertical',
+			//     // 如果需要前进后退按钮
+			//     navigation: {
+			//       nextEl: '.swiper-button-next',
+			//       prevEl: '.swiper-button-prev',
+			//     },
+			//     observer:true,
+			//     observerParent:true
+			// })    
+		},
+	  	destroyed () {}       
+    })
+    </script>
+    <script>        
+	   
+  </script>   
+   
+</body>
+</html>
